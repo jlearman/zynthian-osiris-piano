@@ -1,0 +1,45 @@
+<control>
+label_cc64=Sustain Pedal
+label_cc67=Soft Pedal
+label_cc73=Latency - hammer noise
+
+set_cc73=127
+
+<global>
+//To keep voice buildup reasonable with the sustain pedal down
+note_polyphony=1
+
+// Half pedaling
+// Adapted from https://vi-control.net/community/threads/sfz-half-pedaling.116007/#post-4943326
+// Via kinwie's Splendid Grand
+sustain_cc=90 //re-route default sustain pedal to CC90
+ampeg_dynamic=1 //allow envelope to update on CC64 change
+ampeg_release_shape=-6 //set the sustain curve dropoff curvature
+ampeg_releasecc64=15 //make maximum release time 15 seconds
+ampeg_release_curvecc64=11
+
+//Latency and pre-note mechanical noise control
+offset_cc73=1200
+offset_curvecc73=2 //So top of the range is no additional offset, full hammer noise
+ampeg_attack=0.001 //Just a few samples' worth, to avoid potential clicks from low-frequency noise potentially before the note
+
+<group>
+lovel=0
+hivel=63
+amp_velcurve_63=1
+#include "modules/mappings/uc_mica_vl1_map.sfz"
+<group>
+lovel=64
+hivel=127
+#include "modules/mappings/uc_mica_vl2_map.sfz"
+
+// Curve for half pedal
+<curve>curve_index=11
+v000=0
+v032=0
+v042=.1
+v064=.3
+v072=.4
+v073=1
+v127=1
+
