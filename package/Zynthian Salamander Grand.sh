@@ -1,8 +1,8 @@
 #!/bin/bash
 
 DST_DIR="$ZYNTHIAN_DATA_DIR/soundfonts/sfz/Pianos"
-PKG_NAME="zynthian-osiris-piano"
-REPO="zynthian-osiris-grand"
+DIRNAME="Zynthian Salamander Grand"
+REPO="zynthian-salamander-grand"
 DOWNLOAD_URL="https://github.com/jlearman/$REPO/archive/refs/heads/main.zip"
 
 do_install() {
