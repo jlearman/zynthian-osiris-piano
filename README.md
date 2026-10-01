@@ -11,4 +11,4 @@ for (Zynthian)[https://zynthian.org]:
 Half-pedaling support is retained.  The release time gets shorter with higher notes,
 just as on an acoustic piano, and that is also retained.
 
-Source: (Karoryfer Osiris Piano)[https://shop.karoryfer.com/pages/free-osiris-piano]
+Source: [Karoryfer Osiris Piano](https://shop.karoryfer.com/pages/free-osiris-piano)
