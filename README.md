@@ -2,7 +2,7 @@ Osiris Piano is a unique quiet piano, a worn Yamaha C2 grand recorded at half-
 stick with the soft pedal down and very low dynamics.
 
 This version has been reduced to provide a lower memory and voice profile
-for (Zynthian)[https://zynthian.org]:
+for [Zynthian](https://zynthian.org).
 
 - The original has 3 stereo mic sources, this has only one ("A").
 - The original has original and de-noised samples, de-noised ones are retained.
